@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer{
+    background-color: white;
+    padding: 10px;
+
+    
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+h1, footer p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    background-color: white;
+    border-radius: 0;
+}
+
+.cardHeader {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardActions {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardFooter {
+    display: flex;
+    padding: 20px ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.actions {
+    width: calc(50% - 20px);
+    padding: 20px 0px;
+    font-size: 20px
+}
+
+.actions:last-child  {
+    text-align: end;
+    padding-right: 20px;
+}
+
+.actions:first-child  {
+    text-align: start;
+    padding-left: 20px;
+}
+.cardLogo, .cardMenu{
+    width: 10%;
+}
+
+.userInfo {
+    width: 80%;
+    justify-content: start;
+}
+.cardLikes, .cardComment, .cardActions {
+    width: 100%;
+}
+
+.cardComment {
+    margin-top: 20px;
+}
+.cardLogo {
+    max-height: 50px;
+    object-fit: contain;
+    object-position: left;
+}
+
+.cardMenu {
+    align-self: center;
+    text-align: end;
+    min-height: 100%;
+    font-size: 40px;
+}
+
+
+
+.cardImage {
+    min-width: 100%;
+    max-width: 100%;
+    
+    max-height: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 30px 10px; 
+    }
+}
